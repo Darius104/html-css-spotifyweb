@@ -1,11 +1,8 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
-.prova{
-    height: 200px;
-    width: 200px;
-    background-color: black;
-}
+/* commun */
