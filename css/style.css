@@ -29,7 +29,8 @@ img{
     overflow: hidden;
 }
 .col-left{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 250px;
     height: 100%;
     background-color: black;
@@ -40,13 +41,14 @@ img{
     padding-top: 20px;
     padding-left: 20px;
 }
+
 #second .lista-col-left ul{
     list-style-type: none;
     margin-top: 20px;
 }
-#second.lista-col-left{
-    height: 400px;
+#second.lista-col-left ul{
     overflow-y: auto;
+    height: 400px;
 }
 .lista-col-left ul li{
     display: flex;
@@ -88,9 +90,7 @@ img{
     color: white;
 }
 .mini-container-col-left{
-    position: absolute;
     bottom: 0;
-    display: flex;
     flex-direction: column;
     width: 90%;
     margin: 0 10px;
@@ -178,8 +178,118 @@ hr{
     margin: auto;
     margin-top: 2px;
 }
+/* footer */
 .footer-music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
     height: 100px;
     width: 100%;
     background-color: #282828;
+}
+/* prima colonna del footer */
+.musica-corrente img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.musica-corrente{
+    display: flex;
+    align-items: center;
+}
+.musica-corrente :nth-child(2) :first-child{
+    color: white;
+    font-weight: bold
+}
+.musica-corrente :nth-child(2) :last-child{
+    color: gray;
+    font-size: 10px;
+}
+.heart{
+    margin-left: 40px;
+    margin-right: 15px;
+}
+/* fine prima colonna del footer */
+
+/* inizio seconda colonna footer */
+.col-centrale-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.play-pause i{
+    color: white;
+    padding: 0 5px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.durata-musica{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.bar{
+    margin: 0 20px;
+    width: 400px;
+    height: 3px;
+    background-color: gray;
+}
+.second-bar{
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.durata-musica :first-child, :last-child{
+    color: white;
+}
+.cerchio{
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 85px;
+}
+.second-bar:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.cerchio:hover{
+    
+}
+
+/* ultima colonna footer */
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.icons i{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+.bar-audio{
+    width: 100px;
+    height: 3px;
+    background-color: gray;
+}
+.second-bar-audio{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cerchio-audio{
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
 }
