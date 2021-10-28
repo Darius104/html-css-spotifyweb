@@ -40,6 +40,7 @@ img{
     width: 80%;
     padding-top: 20px;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 #second .lista-col-left ul{
@@ -89,9 +90,15 @@ img{
     font-weight: bold;
     color: white;
 }
-.mini-container-col-left{
-    bottom: 0;
+.lista-col-left{
+    display: flex;
     flex-direction: column;
+}
+.mini-container-col-left{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
     width: 90%;
     margin: 0 10px;
     background-color: black;
@@ -178,6 +185,48 @@ hr{
     margin: auto;
     margin-top: 2px;
 }
+.titolo-testo-main{
+    margin-top: 50px;
+}
+.container-col-right{
+    width: 97%;
+    margin: auto;
+}
+/* row music */
+.container-img-music{
+    width: 25vh;
+    height: 25vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 10px;
+}
+.container-music{
+    display: flex;
+    flex-direction: row;
+}
+.metal{
+    background-image: url(../img/metal_lifting.jpg);
+    margin-left: 0;
+}
+.stranger-things{
+    background-image: url(../img/stranger.jpeg);
+}
+.a-quiet-place{
+    background-image: url(../img/aquietplace.jpeg);
+}
+.split{
+    background-image: url(../img/split.jpeg);
+}
+.a-cure{
+    background-image: url(../img/cure.jpeg);
+}
+.sinister{
+    background-image: url(../img/sinister.jpeg);
+}
+
+/* fine col right */
+
 /* footer */
 .footer-music{
     display: flex;
@@ -210,6 +259,10 @@ hr{
     margin-left: 40px;
     margin-right: 15px;
 }
+.heart, .folder i:hover{
+    cursor: pointer;
+    color: red;
+}
 /* fine prima colonna del footer */
 
 /* inizio seconda colonna footer */
@@ -223,6 +276,14 @@ hr{
     padding: 0 5px;
     font-size: 25px;
     margin-left: 10px;
+    font-size: 25px;
+}
+.play-pause i:nth-child(3){
+    font-size: 35px;
+}
+.play-pause:hover i:nth-child(3){
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .durata-musica{
     margin-top: 15px;
@@ -246,19 +307,25 @@ hr{
 .durata-musica :first-child, :last-child{
     color: white;
 }
-.cerchio{
-    width: 15px;
-    height: 15px;
-    background-color: blue;
-    border-radius: 50%;
-    margin-left: 85px;
+.durata-musica .bar i{
+    padding-left: calc(100% - 16px);
+    z-index: -1;
 }
 .second-bar:hover{
     background-color: greenyellow;
     cursor: pointer;
 }
-.cerchio:hover{
-    
+.bar:hover{
+    cursor: pointer;
+}
+.bar:hover i{
+    z-index: 1;
+}
+.bar:hover .second-bar{
+    background-color: greenyellow;
+}
+.second-bar:hover i{
+    z-index: 1;
 }
 
 /* ultima colonna footer */
@@ -274,22 +341,33 @@ hr{
     flex-direction: row;
     margin: 0 10px;
 }
+.icons i:hover{
+    cursor: pointer;
+}
 .bar-audio{
     width: 100px;
     height: 3px;
     background-color: gray;
 }
 .second-bar-audio{
-    width: 40px;
+    width: 50px;
     height: 3px;
     background-color: white;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.cerchio-audio{
-    width: 15px;
-    height: 15px;
-    background-color: blue;
-    border-radius: 50%;
+.bar-audio:hover{
+    cursor: pointer;
+}
+.bar-audio:hover .second-bar-audio{
+    background-color: yellowgreen;
+}
+.second-bar-audio i{
+    z-index: -1;
+    margin-right: 0;
+}
+.bar-audio:hover i{
+    z-index: 1;
+    color: white;
 }
