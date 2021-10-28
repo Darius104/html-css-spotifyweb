@@ -205,6 +205,21 @@ hr{
     display: flex;
     flex-direction: row;
 }
+.centratura-testo{
+    text-align: center;
+    font-weight: bold;
+}
+.sotto-testo{
+    text-align: center;
+}
+.sotto-testo span{
+    color: gray;
+    font-size: 13px;
+}
+.ascolto{
+    font-size: 10px;
+    color: gray;
+}
 .metal{
     background-image: url(../img/metal_lifting.jpg);
     margin-left: 0;
@@ -224,7 +239,45 @@ hr{
 .sinister{
     background-image: url(../img/sinister.jpeg);
 }
-
+.il-tuo-release{
+    background-image: url(../img/radar.jpeg);
+}
+.il-tuo-daily-mix{
+    background-image: url(../img/mixdaily.jpeg);
+}
+.container-img-music.ray{
+    border-radius: 50%;
+    background-image: url(../img/youg.jpeg);
+}
+.container-img-music.person{
+    border-radius: 50%;
+    background-image: url(../img/einaudi.jpeg);
+}
+.centratura-testo.radar, .daily{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.trasparente-play i{
+    z-index: -1;
+}
+.trasparente-play{
+    font-size: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trasparente-play:hover i{
+    z-index: 1;
+}
+.trasparente-play:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.radius:hover{
+    border-radius: 50%;
+}
 /* fine col right */
 
 /* footer */
